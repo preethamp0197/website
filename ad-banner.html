@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ad Banner generation — Preetham P</title>
+    <meta name="description" content="Single case study showing Ad Banner generation pipeline.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="logo" href="index.html">Your Name</a>
+        <nav class="site-nav" aria-label="Primary">
+          <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation">☰</button>
+          <ul class="nav-links" id="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="index.html#experience">Experience</a></li>
+            <li><a href="index.html#education">Education</a></li>
+            <li><a href="index.html#publications">Publications</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">🌙</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1>Ad Banner generation</h1>
+          <ul class="list">
+            <li>Led the development of an AI product trained in‑house to empower advertisers in generating visually stunning product backgrounds, significantly boosting Ad creativity.</li>
+            <li>Optimized Qwen/SDXL ControlNet models with custom architecture to ensure product integrity, achieving scores on par with third‑party solutions like BRIA and Google Vertex AI.</li>
+          </ul>
+          <div class="pipelines" style="margin-top:16px;">
+            <div class="pipeline">
+              <div class="src"><img src="assets/ad_banner/1_source.jpg" onerror="this.src='assets/placeholder.svg'" alt="source"></div>
+              <div class="arrow-right">→</div>
+              <div class="seg"><img src="assets/ad_banner/1_segmented.jpg" onerror="this.src='assets/placeholder.svg'" alt="segmented"></div>
+              <div class="arrow-down">↓</div>
+              <div class="outputs">
+                <div class="out"><div class="arrow">↓</div><img src="assets/ad_banner/1_ad1.jpg" onerror="this.src='assets/placeholder.svg'" alt="ad 1"></div>
+                <div class="out"><div class="arrow">↓</div><img src="assets/ad_banner/1_ad2.jpg" onerror="this.src='assets/placeholder.svg'" alt="ad 2"></div>
+                <div class="out"><div class="arrow">↓</div><img src="assets/ad_banner/1_ad3.jpg" onerror="this.src='assets/placeholder.svg'" alt="ad 3"></div>
+                <div class="out"><div class="arrow">↓</div><img src="assets/ad_banner/1_ad4.jpg" onerror="this.src='assets/placeholder.svg'" alt="ad 4"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>© <span id="year"></span> Your Name. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+  </html>
+
+
